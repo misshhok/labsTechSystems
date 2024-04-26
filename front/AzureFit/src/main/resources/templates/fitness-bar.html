@@ -1,0 +1,163 @@
+<!doctype html>
+<html data-bs-theme="auto" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <title>AzureFit</title>
+    <link rel="icon" th:href="@{/favicon.ico}">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
+    <script crossorigin="anonymous"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: dodgerblue;">
+        <a class="navbar-brand" th:href="@{/}">AzureFit</a>
+        <button aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-target="#navbarText" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="justify-content-end navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/}">Главная </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/services/}">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/subscriptions/}">Абонементы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/about/}">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/trainers/}">Тренеры</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="row">
+        <div class="offset-md-4 col-md-4 col-sm-4 offset-sm-1 text-center">
+            <h2 class="fw-normal featurette-heading" style="color: dodgerblue">Фитнес-бар</h2>
+        </div>
+    </div>
+
+    <div class="offset-md-2 col-md-8 col-sm-6 offset-sm-2">
+        <p>
+        <h3 class="fw-normal">Добро пожаловать в наш фитнес-бар, где вы можете насладиться свежими и питательными
+            напитками после тренировки и поддержать свой активный образ жизни!
+        </h3><br>
+        Мы предлагаем широкий выбор здоровых и
+        вкусных напитков, чтобы удовлетворить все ваши потребности.<br><br>
+
+        В нашем фитнес-баре вы найдете следующие услуги:<br><br>
+
+        1) Смузи и фреши: Наша команда бариста приготовит для вас свежие смузи и фреши из натуральных фруктов и овощей. Это
+        идеальный способ получить необходимые витамины, минералы и антиоксиданты после интенсивной тренировки.<br><br>
+
+        2) Протеиновые коктейли: Для тех, кто стремится к максимальному восстановлению и развитию мышц, у нас есть
+        разнообразие протеиновых коктейлей. Они помогут вам восстановить энергию, снизить мышечное повреждение и
+        способствовать росту мышц.<br><br>
+
+        3) Здоровые закуски: После тренировки часто возникает желание перекусить. У нас вы найдете разнообразные здоровые
+        закуски, такие как орехи, фрукты, йогурты, протеиновые батончики и многое другое. Это отличный способ снабдить
+        свой организм полезными питательными веществами.<br><br>
+
+        4) Гидратация: Мы также предлагаем широкий выбор напитков для гидратации, включая изотонические напитки,
+        минеральную воду и электролитные напитки. Они помогут вам быстро восстановить уровень жидкости и электролитов
+        после интенсивной тренировки.<br><br>
+
+        5) Консультации по питанию: Наша команда экспертов по питанию всегда готова помочь вам советами и рекомендациями по
+        здоровому питанию. Они ответят на все ваши вопросы и помогут вам выбрать оптимальные продукты, соответствующие
+        вашим целям и потребностям.<br><br>
+
+        В нашем фитнес-баре мы стремимся предоставить вам только самое лучшее, чтобы поддержать вашу активность, энергию
+        и благополучие. После тренировки загляните к нам, чтобы насладиться вкусными и полезными напитками. Ваше
+        здоровье и удовлетворение для нас приоритет!
+    </div>
+</main>
+<footer class="footer-1" id="footer">
+    <div class="main-footer widgets-dark typo-light">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="widget subscribe no-box">
+                        <h5 class="widget-title">AzureFit<span></span></h5>
+                        <p>Фитнес-центр </p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="widget no-box">
+                        <h5 class="widget-title">Быстрые ссылки<span></span></h5>
+                        <ul class="thumbnail-widget">
+                            <li>
+                                <div class="thumb-content"><a th:href="@{/}">Главная</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a th:href="@{/services/}">Услуги</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a th:href="@{/about/}">О нас</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a th:href="@{/subscriptions/}">Абонементы</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a th:href="@{/trainers/}">Тренеры</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+
+                    <div class="widget no-box">
+                        <h5 class="widget-title">Контакты<span></span></h5>
+
+                        <p><a href="#" title="glorythemes">info@domain.com</a></p>
+                        <ul class="social-footer2">
+                            <li class=""><a href="/" target="_blank" title="youtube"><img alt="youtube" height="30"
+                                                                                          src="" width="30"></a></li>
+                            <li class=""><a href="/" target="_blank" title="Facebook"><img alt="Facebook" height="30"
+                                                                                           src="" width="30"></a></li>
+                            <li class=""><a href="/" target="_blank" title="Twitter"><img alt="Twitter" height="30"
+                                                                                          src="" width="30"></a></li>
+                            <li class=""><a href="/" target="_blank" title="instagram"><img alt="instagram" height="30"
+                                                                                            src="" width="30"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>AzureFit © 2023. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

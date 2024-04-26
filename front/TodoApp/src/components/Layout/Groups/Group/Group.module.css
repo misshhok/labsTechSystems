@@ -1,0 +1,28 @@
+.color {
+    width: 9px;
+    height: 9px;
+    border-radius: 2px;
+    border: 2px solid var(--gray-dark);
+    display: inline-block;
+}
+
+.groupname {
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.group {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "color name delete";
+    align-items: center;
+    gap: 7px;
+}
+
+.delete {
+    fill: var(--gray-dark);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,17 @@
+{
+	"ulid": "01HWCDVC86HXXP5D6NW5T56VD2",
+	"minTime": 1714097722868,
+	"maxTime": 1714104000000,
+	"stats": {
+		"numSamples": 30,
+		"numSeries": 5,
+		"numChunks": 5
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01HWCDVC86HXXP5D6NW5T56VD2"
+		]
+	},
+	"version": 1
+}

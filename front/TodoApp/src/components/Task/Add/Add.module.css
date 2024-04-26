@@ -1,0 +1,19 @@
+.star path{
+    fill: var(--main);
+}
+
+.add {
+    background: #ffffff;
+    padding: 15px;
+    margin: 3px 0;
+    display: none;
+}
+
+.items {
+    display: grid;
+    gap: 10px;
+}
+
+.active {
+    display: block;
+}

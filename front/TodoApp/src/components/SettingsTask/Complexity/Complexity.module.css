@@ -1,0 +1,25 @@
+.filled path{
+    fill: var(--main);
+}
+
+.star {
+    display: inline-block;
+    margin-right: 2px;
+}
+
+.starBlock {
+    position: relative;
+    top: 3px;
+    left: 10px;
+}
+
+.ratingBlock {
+    display: inline-block;
+}
+
+@media (max-width: 400px) {
+
+    .ratingBlock {
+        display: block;
+    }
+}

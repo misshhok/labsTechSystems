@@ -1,0 +1,82 @@
+spring:
+  banner:
+    location: classpath:banner.txt
+  application:
+    name: AzureFit
+  level:
+    org:
+      springframework:
+        web:
+          servlet:
+            DispatcherServlet: DEBUG
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  jackson.serialization:
+    WRITE_DATES_AS_TIMESTAMPS: false
+    indent_output: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 25
+    password: "azurefit"
+    username: "azurefit"
+    url: "jdbc:postgresql://localhost:5434/azurefit_db"
+  liquibase:
+    contexts: ddl,data
+    url: ${spring.datasource.url}
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+    enabled: true
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+  endpoints:
+    web:
+      exposure:
+        include: ["configprops", "env", "metrics", "health", "info", "threaddump", "prometheus"]
+  metrics:
+    distribution:
+      percentiles-histogram:
+        "[http.server.requests]": true
+  prometheus:
+    metrics:
+      metrics:
+        export:
+          # Prometheus is the default metrics backend
+          prometheus:
+            enabled: true
+            step: 60
+        enable:
+          http: true
+          jvm: true
+          logback: true
+          process: true
+          system: true
+        distribution:
+          percentiles-histogram:
+            all: true
+          percentiles:
+            all: 0, 0.5, 0.75, 0.95, 0.99, 1.0
+        tags:
+          application: ${spring.application.name}
+        web:
+          server:
+            request:
+              autotime:
+                enabled: true
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}] "
+    org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: ERROR
+    com.parking: INFO
+    # org.hibernate.SQL: DEBUG
+    # org.hibernate.type: TRACE
+

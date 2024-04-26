@@ -1,0 +1,16 @@
+.elem {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+}
+
+.title {
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+.stats {
+    margin: 10px;
+    display: grid;
+    gap: 7px;
+}

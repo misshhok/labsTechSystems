@@ -1,0 +1,51 @@
+.mainP {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    grid-template-areas:
+            'groups stats'
+            'actual stats'
+;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr 1fr ;
+}
+
+.group {
+    grid-area: groups;
+    background: #ffffff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.grade {
+    grid-area: actual;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.stats {
+    grid-area: stats;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+
+    .mainP {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'groups'
+            'actual'
+            'stats'
+    ;
+        gap: 20px;
+        width: 100%;
+        height: 100%;
+        grid-template-rows: 1fr 1fr auto;
+    }
+}

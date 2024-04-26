@@ -1,0 +1,83 @@
+.groups {
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.color {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 15px;
+    height: 19px;
+    border: none;
+    margin-right: 15px;
+}
+
+.color::-webkit-color-swatch {
+    border-radius: 2px;
+    border: 2px solid var(--gray-dark);
+}
+
+.button {
+    background: none;
+    border: none;
+}
+
+.groupname {
+    border: none;
+    border-bottom: 1px solid var(--gray);
+    padding: 7px;
+    color: var(--gray);
+    width: 150px;
+}
+
+.groupname:focus {
+    outline: none;
+    color: #000000;
+    border-color: var(--gray-dark);
+}
+
+.plus {
+    height: 30px;
+    width: 30px;
+    fill: var(--gray);
+    transition: all .15s;
+}
+.groupname:focus+.button .plus{
+    fill: var(--gray-dark);
+}
+
+.groupname:focus+.button .plus:hover{
+    fill: var(--main);
+}
+
+.group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 25px;
+    margin-right: 20px;
+    margin-left: 47px;
+    max-height: 27vh;
+    overflow: auto;
+}
+
+.group::-webkit-scrollbar {
+    width: 4px;               /* ширина scrollbar */
+}
+.group::-webkit-scrollbar-track {
+    background: #ffffff;        /* цвет дорожки */
+}
+.group::-webkit-scrollbar-thumb {
+    background-color: var(--gray);    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+}
+.groupsAll {
+    display: none;
+}
+
+.groupsAllOpen {
+    display: block;
+}

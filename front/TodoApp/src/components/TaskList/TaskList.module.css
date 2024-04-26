@@ -1,0 +1,23 @@
+.noTasks {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--gray-dark);
+}
+
+.tasklist {
+    max-height: 80vh;
+    overflow: auto;
+}
+
+.tasklist::-webkit-scrollbar {
+    width: 8px;               /* ширина scrollbar */
+}
+.tasklist::-webkit-scrollbar-track {
+    background: var(--bg);/* цвет дорожки */
+}
+.tasklist::-webkit-scrollbar-thumb {
+    background-color: var(--gray);    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    border: 2px solid var(--bg)
+}

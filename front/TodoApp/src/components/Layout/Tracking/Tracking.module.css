@@ -1,0 +1,33 @@
+.tracking {
+    background: #ffffff;
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 6px;
+    padding: 6px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.icon {
+    background: var(--main);
+    border-radius: 7px;
+    width: 14px;
+    height: 14px;
+    padding: 9px;
+    cursor: pointer;
+    transition: all .2s;
+}
+.icon:hover {
+    background: var(--main-hover);
+}
+
+.activeButton {
+    display: none;
+}
+
+.time {
+    margin: 0 10px;
+}

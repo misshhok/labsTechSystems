@@ -1,0 +1,63 @@
+.header {
+    background: var(--main);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user {
+    width: 30px;
+    height: 30px;
+}
+
+.burger {
+    width: 25px;
+    height: 14px;
+    position: relative;
+    display: none;
+}
+.burger:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    height: 2px;
+    transition: all .1s;
+}
+
+.burger:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    height: 2px;
+    transition: all .1s;
+}
+
+
+.title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.burgerClose:before {
+    transform: rotate(45deg);
+    bottom: 6px;
+}
+.burgerClose:after {
+    transform: rotate(-45deg);
+    top: 6px;
+}
+
+@media (max-width: 750px) {
+    .burger {
+        display: block;
+    }
+}
+

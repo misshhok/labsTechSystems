@@ -1,0 +1,7 @@
+.settings {
+    background: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    font-weight: 500;
+    font-size: 16px;
+}

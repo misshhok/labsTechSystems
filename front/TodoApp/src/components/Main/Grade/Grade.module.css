@@ -1,0 +1,31 @@
+.grade  {
+    display: grid;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.pie {
+    width: 200px;
+    height: 200px;
+}
+
+.pieFake {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 25px solid var(--main);
+    margin: 30px;
+}
+
+@media (max-width: 400px) {
+    .pieFake {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        border: 20px solid var(--main);
+        margin: 20px;
+    }
+}

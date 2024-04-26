@@ -1,0 +1,18 @@
+.descriptipon {
+    margin-top: 20px;
+}
+
+.comment {
+    resize: none;
+    display: block;
+    width: 100%;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    padding-top: 3px;
+    margin: 12px 0;
+}
+
+.comment:focus {
+    outline: 2px solid var(--main);
+    border: 2px solid #fff;
+}

@@ -1,0 +1,16 @@
+.groupTask {
+    display: inline-block;
+}
+
+.color {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    margin-right: 10px;
+    border: 1px solid var(--gray-dark);
+}
+
+.name {
+    display: inline-block;
+}

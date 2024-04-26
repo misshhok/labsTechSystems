@@ -1,0 +1,20 @@
+.taskForm {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr);
+    justify-content: center;
+    gap: 5px;
+}
+
+.buttonLink {
+    width: 100%;
+    display: block;
+}
+
+.addTask {
+    color: var(--white);
+}
+
+
+@media (max-width: 500px) {
+    
+}

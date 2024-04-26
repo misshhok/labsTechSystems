@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Корусель с абонементами</title>
+    <style>
+        /* Стили для карусели */
+
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding: 20px;
+        }
+
+        .card {
+            flex: 0 0 300px;
+            margin-right: 20px;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        .card button {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="carousel">
+    <div class="card">
+        <img src="https://www.example.com/abonement1.jpg" alt="Абонемент 1">
+        <h3>Абонемент 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur vitae diam vel ullamcorper.</p>
+        <button>Купить</button>
+    </div>
+
+    <div class="card">
+        <img src="https://www.example.com/abonement2.jpg" alt="Абонемент 2">
+        <h3>Абонемент 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur vitae diam vel ullamcorper.</p>
+        <button>Купить</button>
+    </div>
+
+    <div class="card">
+        <img src="https://www.example.com/abonement3.jpg" alt="Абонемент 3">
+        <h3>Абонемент 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur vitae diam vel ullamcorper.</p>
+        <button>Купить</button>
+    </div>
+
+    <!-- Дополнительные карточки абонементов -->
+
+</div>
+
+<script>
+    // Получаем элементы DOM
+    const carousel = document.querySelector('.carousel');
+    const cards = carousel.querySelectorAll('.card');
+    const prevButton = document.createElement('button');
+    const nextButton = document.createElement('button');
+
+    // Функция для прокрутки карусели влево
+    const scrollLeft = () => {
+        carousel.scrollBy({
+            left: -300,
+            behavior: 'smooth'
+        });
+    };
+
+    // Функция для прокрутки карусели вправо
+    const scrollRight = () => {
+        carousel.scrollBy({
+            left: 300,
+            behavior: 'smooth'
+        });
+    };
+
+    // Добавляем обработчики событий для кнопок прокрутки
+    prevButton.textContent = 'Назад';
+    nextButton.textContent = 'Вперед';
+    prevButton.addEventListener('click', scrollLeft);
+    nextButton.addEventListener('click', scrollRight);
+
+    // Вставляем кнопки прокрутки перед и после карусели
+    carousel.insertAdjacentElement('beforebegin', prevButton);
+    carousel.insertAdjacentElement('afterend', nextButton);
+</script>
+</body>
+</html>

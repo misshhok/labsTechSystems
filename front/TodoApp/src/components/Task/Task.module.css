@@ -1,0 +1,84 @@
+.task {
+    background: var(--white);
+    border-radius: 12px 12px 0 0;
+    padding: 15px 15px 20px 15px;
+    display: grid;
+    grid-template-columns: 20px auto 80px;
+    grid-template-areas:
+            ". . duedate"
+            "taskname taskname ."
+            ". . priority"
+;
+    gap: 1px;
+}
+
+.taskBlock {
+    margin-bottom: 20px;
+}
+.toolkit {
+    border-radius: 0 0 12px 12px;
+    padding: 8px 6px 6px;
+    background: var(--gray);
+    display: flex;
+    justify-content: space-between;
+}
+
+.taskName {
+    grid-area: taskname;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all .15s;
+}
+
+.taskName div {
+    transition: all .15s;
+}
+
+
+.taskName:hover div {
+    color: var(--main);
+}
+
+.iconActive path {
+    fill: var(--main);
+    transition: all .3s;
+}
+
+.dueDate {
+    grid-area: duedate;
+    justify-self: right;
+}
+
+.complexity {
+    grid-area: compl;
+    position: relative;
+    justify-self: right;
+    right: 30px;
+    margin-bottom: 10px;
+}
+
+.priority {
+    grid-area: priority;
+    font-size: 12px;
+    justify-self: right;
+}
+
+.icon {
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    margin-left: 5px;
+    transition: all .2s;
+}
+
+.icon:hover  {
+    fill: var(--main);
+}
+
+
+.toolkit:first-child {
+    margin-left: 0;
+}

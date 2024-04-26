@@ -1,0 +1,161 @@
+<!doctype html>
+<html data-bs-theme="auto" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <title>AzureFit</title>
+    <link rel="icon" th:href="@{/favicon.ico}">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
+    <script crossorigin="anonymous"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: dodgerblue;">
+        <a class="navbar-brand" th:href="@{/}">AzureFit</a>
+        <button aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-target="#navbarText" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="justify-content-end navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/}">Главная </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" th:href="@{/services/}">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/subscriptions/}">Абонементы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/about/}">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/trainers/}">Тренеры</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="row">
+        <div class="offset-md-4 col-md-4 col-sm-4 offset-sm-1 text-center">
+            <h2 class="fw-normal featurette-heading" style="color: dodgerblue">Тренажерный зал</h2>
+        </div>
+
+        <div class="offset-md-2 col-md-8 col-sm-6 offset-sm-2">
+            <p>
+            <h3 class="fw-normal">Добро пожаловать в наш секцию тренажерного зала, где вы найдете все необходимое для эффективных и
+            разнообразных тренировок, помогающих вам достичь ваших фитнес-целей и улучшить свою физическую форму!
+            </h3><br>
+
+            В нашем тренажерном зале предоставляются следующие услуги:<br><br>
+
+            Кардио-тренировки: У нас есть широкий выбор кардио-тренажеров, таких как беговые дорожки, велотренажеры,
+            эллиптические тренажеры и гребные тренажеры. Они помогут вам улучшить ваше кардио-выносливость, сжигать
+            калории и повысить общую физическую активность.<br><br>
+
+            Силовые тренировки: Наш тренажерный зал оснащен различными силовыми тренажерами, включая свободные веса,
+            многозонные тренажеры и специализированные машины для развития отдельных групп мышц. Это идеальное место для
+            укрепления и развития вашей силы и мышц.<br><br>
+
+            Функциональные тренировки: Мы предлагаем пространство для функциональных тренировок, которые включают
+            использование собственного веса тела, строп, гимнастических колец и других инструментов. Эти тренировки
+            развивают координацию, гибкость и силу, повышая вашу функциональность в повседневной жизни.<br><br>
+
+            Персональные тренировки: Наши опытные персональные тренеры доступны для индивидуальных консультаций и
+            разработки индивидуальных программ тренировок. Они помогут вам разработать оптимальную тренировочную
+            программу, учитывая ваши цели, физическую подготовку и особенности.<br><br>
+
+            Безопасность и комфорт: Ваше благополучие является нашим приоритетом. Мы поддерживаем чистоту и гигиену в
+            тренажерном зале, предоставляем качественное оборудование и обеспечиваем безопасную и спокойную атмосферу
+            для всех наших посетителей.<br><br>
+
+            Не важно, являетесь ли вы новичком или опытным спортсменом, в нашей секции тренажерного зала вы найдете все
+            необходимое для полноценной тренировки. Приходите и воплотите свои фитнес-цели в жизнь вместе с нами!<br><br>
+        </div>
+    </div>
+</main>
+<footer class="footer-1" id="footer">
+    <div class="main-footer widgets-dark typo-light">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="widget subscribe no-box">
+                        <h5 class="widget-title">AzureFit<span></span></h5>
+                        <p>Фитнес-центр </p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="widget no-box">
+                        <h5 class="widget-title">Быстрые ссылки<span></span></h5>
+                        <ul class="thumbnail-widget">
+                            <li>
+                                <div class="thumb-content"><a th:href="@{/}">Главная</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a th:href="@{/services/}">Услуги</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a th:href="@{/about/}">О нас</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a th:href="@{/subscriptions/}">Абонементы</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a th:href="@{/trainers/}">Тренеры</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+
+                    <div class="widget no-box">
+                        <h5 class="widget-title">Контакты<span></span></h5>
+
+                        <p><a href="#" title="glorythemes">info@domain.com</a></p>
+                        <ul class="social-footer2">
+                            <li class=""><a href="/" target="_blank" title="youtube"><img alt="youtube" height="30"
+                                                                                          src="" width="30"></a></li>
+                            <li class=""><a href="/" target="_blank" title="Facebook"><img alt="Facebook" height="30"
+                                                                                           src="" width="30"></a></li>
+                            <li class=""><a href="/" target="_blank" title="Twitter"><img alt="Twitter" height="30"
+                                                                                          src="" width="30"></a></li>
+                            <li class=""><a href="/" target="_blank" title="instagram"><img alt="instagram" height="30"
+                                                                                            src="" width="30"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>AzureFit © 2023. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

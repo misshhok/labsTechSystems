@@ -1,0 +1,19 @@
+.back {
+    background: none;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+
+}
+
+.icon path {
+    fill: var(--main);
+}
+
+.icon:hover path {
+    fill: var(--main-hover);
+}

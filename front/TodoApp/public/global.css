@@ -1,0 +1,40 @@
+:root {
+    --bg: #ece9e9;
+    --main: #2564cf;
+    --white: #fff;
+    --font: #000;
+    --gray: #d5d5d5;
+    --gray-dark: #838383;
+    --main-hover: #1a4ba2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    color: var(--font);
+}
+
+#root {
+    background: var(--bg);
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.App {
+    min-height: 100vh;
+}
+
+.active {
+    background: rgba(37, 100, 207, 0.1);
+    border-left: 3px solid var(--main);
+    font-weight: 700;
+}

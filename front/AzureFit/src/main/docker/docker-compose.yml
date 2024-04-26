@@ -1,0 +1,58 @@
+version: '3'
+
+
+services:
+
+
+  azurefit-db:
+    image: postgres:12.6-alpine
+    volumes:
+      - .volumes/pg_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: azurefit_db
+      POSTGRES_USER: azurefit
+      POSTGRES_PASSWORD: azurefit
+    ports:
+      - "5434:5432"
+
+  application:
+    build: .
+    container_name: azurefit_app
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://azurefit-db/azurefit_db
+    ports:
+      - "8081:8080"
+
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./config/prometheus/:/etc/prometheus/
+      - .volumes/prometheus:/prometheus
+    networks:
+      monitoring:
+        aliases:
+          - prometheus
+    depends_on:
+      - azurefit-db
+
+  grafana:
+    build: 'config/grafana'
+    ports:
+      - "3000:3000"
+    volumes:
+      - .volumes/grafana:/var/lib/grafana
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    networks:
+      monitoring:
+        aliases:
+          - grafana
+    depends_on:
+      - azurefit-db
+
+
+networks:
+  monitoring:

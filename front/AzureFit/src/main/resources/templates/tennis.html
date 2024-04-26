@@ -1,0 +1,164 @@
+<!doctype html>
+<html data-bs-theme="auto" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <title>AzureFit</title>
+    <link rel="icon" th:href="@{/favicon.ico}">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
+    <script crossorigin="anonymous"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: dodgerblue;">
+        <a class="navbar-brand" th:href="@{/}">AzureFit</a>
+        <button aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-target="#navbarText" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="justify-content-end navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/}">Главная </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" th:href="@{/services/}">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/subscriptions/}">Абонементы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/about/}">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/trainers/}">Тренеры</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="row">
+        <div class="offset-md-4 col-md-4 col-sm-4 offset-sm-1 text-center">
+            <h2 class="fw-normal featurette-heading" style="color: dodgerblue">Теннисный корт</h2>
+        </div>
+    </div>
+
+    <div class="offset-md-2 col-md-8 col-sm-6 offset-sm-2">
+        <p>
+        <h3 class="fw-normal">Добро пожаловать на наш теннисный корт, где вы сможете насладиться игрой в теннис и улучшить свои навыки в этом
+        элегантном и динамичном виде спорта.
+        </h3><br>
+         Наш теннисный корт предлагает удобства и услуги, чтобы сделать вашу игру
+        комфортной и приятной.<br><br>
+
+        Вот что вы можете ожидать от нашего теннисного корта:<br><br>
+
+        Профессиональные условия: Наш теннисный корт разработан с учетом всех требований для профессиональной игры. Мы
+        используем качественное покрытие, которое обеспечивает хорошую амортизацию и отскок мяча. Кроме того, наши корты
+        регулярно обслуживаются и поддерживаются для оптимальной игровой поверхности.<br><br>
+
+        Разнообразные возможности: Наш теннисный корт доступен для игры как для начинающих, так и для опытных игроков.
+        Вы можете забронировать корт для свободной игры, провести тренировку со своим тренером или принять участие в
+        организованных турнирах и матчах. У нас есть возможность адаптировать игру под ваши потребности и уровень.<br><br>
+
+        Прокат оборудования: Если вам необходимо, мы предлагаем прокат теннисных ракеток и мячей. Это отличная
+        возможность для тех, кто хочет попробовать игру или не имеет собственного оборудования. Наш персонал также может
+        помочь вам выбрать правильную ракетку, соответствующую вашим потребностям и стилю игры.<br><br>
+
+        Инструкторы и тренеры: Мы предлагаем услуги профессиональных инструкторов и тренеров, которые помогут вам
+        улучшить свою технику, стратегию игры и физическую форму. Они могут предложить индивидуальные тренировки или
+        групповые занятия, чтобы помочь вам достичь ваших целей в игре.<br><br>
+
+        Социальный аспект: Наш теннисный корт также является местом встречи и социализации для любителей тенниса. Вы
+        сможете встретить единомышленников, сыграть в матч с друзьями или просто насладиться атмосферой теннисного
+        сообщества.<br><br>
+
+        Не важно, являетесь ли вы начинающим или опытным игроком, наш теннисный корт предоставляет возможность
+        насладиться игрой и улучшить свои навыки. Присоединяйтесь к нам на нашем теннисном корте и позвольте себе
+        окунуться в мир этого элегантного и захватывающего вид спорта!<br><br>
+    </div>
+</main>
+<footer class="footer-1" id="footer">
+    <div class="main-footer widgets-dark typo-light">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="widget subscribe no-box">
+                        <h5 class="widget-title">AzureFit<span></span></h5>
+                        <p>Фитнес-центр </p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="widget no-box">
+                        <h5 class="widget-title">Быстрые ссылки<span></span></h5>
+                        <ul class="thumbnail-widget">
+                            <li>
+                                <div class="thumb-content"><a th:href="@{/}">Главная</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a th:href="@{/services/}">Услуги</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a th:href="@{/about/}">О нас</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a th:href="@{/subscriptions/}">Абонементы</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a th:href="@{/trainers/}">Тренеры</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+
+                    <div class="widget no-box">
+                        <h5 class="widget-title">Контакты<span></span></h5>
+
+                        <p><a href="#" title="glorythemes">info@domain.com</a></p>
+                        <ul class="social-footer2">
+                            <li class=""><a href="/" target="_blank" title="youtube"><img alt="youtube" height="30"
+                                                                                          src="" width="30"></a></li>
+                            <li class=""><a href="/" target="_blank" title="Facebook"><img alt="Facebook" height="30"
+                                                                                           src="" width="30"></a></li>
+                            <li class=""><a href="/" target="_blank" title="Twitter"><img alt="Twitter" height="30"
+                                                                                          src="" width="30"></a></li>
+                            <li class=""><a href="/" target="_blank" title="instagram"><img alt="instagram" height="30"
+                                                                                            src="" width="30"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>AzureFit © 2023. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
